@@ -1,0 +1,108 @@
+$color_white: #ffffff;
+$color_light: #D6BBD3;
+$color_light2: #C9ADC6;
+$color_middle: #B08EAD;
+$color_dark: #524351;
+$color_border: #B99BB6;
+
+
+* {
+  color: $color_white;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+html,
+body,
+ul,
+li,
+link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background-color: $color_light;
+  padding: 20px 0;
+}
+
+.btn {
+  color: $color_dark;
+  background-color: $color_light2;
+  border: 1px solid $color_border;
+  border-radius: 25px;
+  padding: 16px 29px 14px 29px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal {
+  background-color: #00000099;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .modal__form {
+    position: relative;
+    background-color: $color_middle;
+    max-width: 300px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid $color_border;
+    display: grid;
+    justify-content: center;
+  }
+
+  .submit-btn {
+    text-align: center;
+  }
+
+  .icon-close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: inherit;
+    border: none;
+    color: $color_dark;
+  }
+}
+
+input {
+  color: $color_dark;
+  background-color: $color_light2;
+  border: 1px solid $color_border;
+  border-radius: 25px;
+  padding: 16px 29px 14px 29px;
+  margin: 5px 10px;
+}
+
+label {
+  color: $color_dark;
+}
+
+.redirect-div {
+  display: flex;
+  justify-content: center;
+}

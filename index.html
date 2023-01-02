@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <div class="redirect-div">
+            <button type="button" class="btn modal-btn">
+                Ввести посилання на сайт
+            </button>
+            <a type="button" class="btn redirect-btn">
+                Перейти за посиланням
+            </a>
+        </div>
+
+        <div class="redirect-div">
+            <p class="redirect-url"></p>
+        </div>
+    </div>
+
+    <div class="modal hidden" data-action="close">
+        <form class="modal__form">
+            <button type="button" class="icon-close-btn" data-action="close">
+                🗙
+            </button>
+            <label for="url">Введіть Ваше посилання на сайт</label>
+            <input type="url" name="url" id="url" placeholder="...">
+            <button type="submit" class="btn submit-btn">
+                Підтвердити
+            </button>
+        </form>
+    </div>
+</section>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
